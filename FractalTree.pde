@@ -16,6 +16,7 @@ public void draw()
 public void keyTyped(){
   if(key=='q'){
     smallestBranch/=2;
+    if(smallestBranch==1) smallestBranch*=2;
     redraw();
   }
   else if(key=='w'){
@@ -24,6 +25,7 @@ public void keyTyped(){
   }
   else if(key=='e'){
     smallestBranch*=2;
+    if(smallestBranch>640) smallestBranch/=2;
     redraw();
   }
 }
